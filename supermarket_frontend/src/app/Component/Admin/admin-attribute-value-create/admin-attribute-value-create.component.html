@@ -1,0 +1,36 @@
+<app-admin-header></app-admin-header>
+<div class="content-wrapper">
+  <section class="content">
+    <div class="container-fluid">
+      <div>
+        <form #productForm="ngForm" (ngSubmit)="onSubmit()">
+          <div>
+            <label for="attribute">Attribute:</label>
+            <select name="attributeId" id="attribute" class="form-control" [(ngModel)]="attribute_value.attributeId" required>
+              <option *ngFor="let attribute of attributes" [value]="attribute.id">{{ attribute.name }}</option>
+            </select>
+          </div>
+          <div>
+            <label for="name">Name Attribute Value:</label>
+            <input type="text" id="name" name="name" [(ngModel)]="attribute_value.name" required>
+          </div>
+          <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" [(ngModel)]="attribute_value.quantity" required>
+          </div>
+          <div>
+            <label for="priceIn">Price In:</label>
+            <input type="text" id="priceIn" name="priceIn" [(ngModel)]="attribute_value.priceIn" required>
+          </div>
+          <div>
+            <label for="priceOut">Price Out:</label>
+            <input type="text" id="priceOut" name="priceOut" [(ngModel)]="attribute_value.priceOut" required>
+          </div>
+          <button type="submit" [disabled]="!productForm.form.valid">Add Attribute Value</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+<app-admin-footer></app-admin-footer>
+<router-outlet></router-outlet>

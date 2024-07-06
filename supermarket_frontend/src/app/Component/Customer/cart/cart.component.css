@@ -1,0 +1,97 @@
+.shoping-cart {
+  padding: 50px 0;
+}
+
+.shoping__cart__table {
+  width: 100%;
+  margin-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.shoping__cart__table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.shoping__cart__table th {
+  background: #f39c12; /* Đổi màu nền hàng đầu thành màu vàng */
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff; /* Đổi màu chữ thành màu trắng */
+}
+
+.shoping__cart__table th,
+.shoping__cart__table td {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.shoping__cart__table tbody {
+  background: #ffffff; /* Giữ màu nền của phần tbody là màu trắng */
+}
+
+.shoping__cart__item img {
+  width: 50px;
+  height: auto;
+}
+
+.shoping__checkout {
+  background: #f9f9f9; /* Thay đổi màu nền thành màu xám nhạt */
+  border: 1px solid #f1c40f; /* Đổi viền thành màu vàng */
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 15px; /* Đảm bảo phần này nằm ngang với bảng */
+}
+
+.shoping__checkout h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #f1c40f; /* Đổi màu chữ thành màu vàng */
+}
+
+
+.shoping__checkout ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.shoping__checkout ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.shoping__checkout ul li span {
+  float: right;
+}
+
+.primary-btn {
+  background: #f39c12;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+  text-align: center;
+}
+
+.primary-btn:hover {
+  background: #e67e22;
+}
+
+.primary-btn.cart-btn {
+  margin-right: 15px;
+}
+
+/* Ensure alignment of top borders */
+.row {
+  display: flex;
+  align-items: flex-start;
+}

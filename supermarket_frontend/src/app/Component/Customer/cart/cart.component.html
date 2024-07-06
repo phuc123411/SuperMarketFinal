@@ -1,0 +1,70 @@
+<app-customer-header></app-customer-header>
+
+<!-- Shoping Cart Section Begin -->
+<section class="shoping-cart spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="shoping__cart__table">
+          <table>
+            <thead>
+              <tr>
+                <th>Products</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of cartItems; let i = index">
+                <td class="shoping__cart__item">
+                  <h5>{{ item.productName }}</h5>
+                </td>
+                <td>
+                  <h5><img src="{{item.urlImage}}"></h5>
+                </td>
+                <td class="shoping__cart__price">
+                  {{ item.price | currency:'VND':'symbol':'1.0-0' }}
+                </td>
+                <td class="shoping__cart__quantity">
+                  <div class="quantity">
+                    <div class="pro-qty">
+                      <input type="text" value="{{ item.quantity }}" disabled>
+                    </div>
+                  </div>
+                </td>
+                <td class="shoping__cart__total">
+                  {{ (item.quantity * item.price) | currency:'VND':'symbol':'1.0-0' }}
+                </td>
+                <td class="shoping__cart__item__close">
+                  <span class="icon_close" (click)="removeFromCart(i)"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="shoping__checkout">
+          <h5>Cart Total</h5>
+          <ul>
+            <li>Total <span>{{ calculateSubtotal() | currency:'VND':'symbol':'1.0-0' }}</span></li>
+          </ul>
+          <a routerLink="/order" class="primary-btn">PROCEED TO CHECKOUT</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="shoping__cart__btns">
+          <a routerLink="/" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Shoping Cart Section End -->
+
+<app-customer-footer></app-customer-footer>

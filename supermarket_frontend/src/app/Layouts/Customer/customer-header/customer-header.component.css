@@ -1,0 +1,7 @@
+.header__top__right__auth .login-link {
+    margin-left: 20px; /* Điều chỉnh giá trị này theo ý bạn để di chuyển nút đăng nhập về bên phải */
+  }
+.header__logo img{
+    width: 50%;
+    margin-left: 60px;
+}

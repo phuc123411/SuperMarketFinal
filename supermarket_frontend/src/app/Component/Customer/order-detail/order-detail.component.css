@@ -1,0 +1,97 @@
+/* Bỏ cột Action */
+#orderList .table-card .action-column,
+#orderList .table-card th:nth-child(9),
+#orderList .table-card td:nth-child(9) {
+    display: none;
+}
+
+/* Các điều chỉnh khác cho giao diện */
+#orderList .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#orderList .card-header {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+}
+
+#orderList .card-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#orderList .card-body {
+    padding: 20px;
+}
+
+#orderList .search-box {
+    position: relative;
+}
+
+#orderList .search-box input {
+    padding-right: 35px;
+}
+
+#orderList .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+#orderList .nav-tabs-custom .nav-link {
+    background-color: transparent;
+    border: none;
+    color: #6c757d;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#orderList .nav-tabs-custom .nav-link.active,
+#orderList .nav-tabs-custom .nav-link:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#orderList .table-card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#orderList .table-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#orderList .table-card th,
+#orderList .table-card td {
+    padding: 12px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#orderList .table-card th {
+    background-color:#007bff;
+    color: #fff;
+    border-right: 1px solid #dee2e6;
+}
+
+#orderList .table-card tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#orderList .table-card tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+#orderList .pagination {
+    justify-content: flex-end;
+}

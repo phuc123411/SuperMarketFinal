@@ -1,0 +1,20 @@
+.imagelist, .listDisplay{
+  display: flex;
+  flex-wrap: wrap;
+}
+.attributesContainer, .attributeValuesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Khoảng cách giữa các phần tử */
+  margin-bottom: 20px; /* Khoảng cách giữa hai dòng */
+}
+
+.listDisplay {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+}

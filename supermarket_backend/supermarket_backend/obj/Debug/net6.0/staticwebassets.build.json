@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "ftmv0Th5iVF/Dc8lJrnrdj8XLZEgrO72y5+Fpvtq7Rg=",
+  "Source": "supermarket_backend",
+  "BasePath": "_content/supermarket_backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "supermarket_backend\\wwwroot",
+      "Source": "supermarket_backend",
+      "ContentRoot": "C:\\Users\\TC Grizzly\\Desktop\\SPFinal1\\SuperMarket1\\supermarket_backend\\supermarket_backend\\wwwroot\\",
+      "BasePath": "_content/supermarket_backend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\TC Grizzly\\Desktop\\SPFinal1\\SuperMarket1\\supermarket_backend\\supermarket_backend\\wwwroot\\images\\3e93c5ab-21df-45fd-aec7-5eedea7ff331_10281835.jpg",
+      "SourceId": "supermarket_backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TC Grizzly\\Desktop\\SPFinal1\\SuperMarket1\\supermarket_backend\\supermarket_backend\\wwwroot\\",
+      "BasePath": "_content/supermarket_backend",
+      "RelativePath": "images/3e93c5ab-21df-45fd-aec7-5eedea7ff331_10281835.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3e93c5ab-21df-45fd-aec7-5eedea7ff331_10281835.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\TC Grizzly\\Desktop\\SPFinal1\\SuperMarket1\\supermarket_backend\\supermarket_backend\\wwwroot\\images\\497fff4d-2ca5-47df-a60b-ee093d3077d6_10281835.jpg",
+      "SourceId": "supermarket_backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TC Grizzly\\Desktop\\SPFinal1\\SuperMarket1\\supermarket_backend\\supermarket_backend\\wwwroot\\",
+      "BasePath": "_content/supermarket_backend",
+      "RelativePath": "images/497fff4d-2ca5-47df-a60b-ee093d3077d6_10281835.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\497fff4d-2ca5-47df-a60b-ee093d3077d6_10281835.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\TC Grizzly\\Desktop\\SPFinal1\\SuperMarket1\\supermarket_backend\\supermarket_backend\\wwwroot\\images\\f8af402b-2fdf-4fc0-9d3a-c758adc2a3d5_gia-do-wineco-300g_30d1ca80-a65f-45af-b099-154e806a4be4-og.jpg",
+      "SourceId": "supermarket_backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TC Grizzly\\Desktop\\SPFinal1\\SuperMarket1\\supermarket_backend\\supermarket_backend\\wwwroot\\",
+      "BasePath": "_content/supermarket_backend",
+      "RelativePath": "images/f8af402b-2fdf-4fc0-9d3a-c758adc2a3d5_gia-do-wineco-300g_30d1ca80-a65f-45af-b099-154e806a4be4-og.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f8af402b-2fdf-4fc0-9d3a-c758adc2a3d5_gia-do-wineco-300g_30d1ca80-a65f-45af-b099-154e806a4be4-og.jpg"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+/* Customize your CSS styles here */
+
+/* Style for search box */
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding-right: 30px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Style for table actions */
+.table-actions .btn {
+    font-size: 14px;
+}
+
+/* Style for modal */
+.modal-title {
+    font-size: 18px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Customize button styles */
+
+/* Pagination style */
+.pagination {
+    justify-content: flex-end;
+}
+
+/* Badge style */
+.badge {
+    font-size: 12px;
+}
+
+/* Tooltips */
+[data-bs-toggle="tooltip"] {
+    cursor: pointer;
+}
+/* Add your custom styles here */
+
+/* Table styles */
+.table {
+    min-width: 900px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+/* Form check styles */
+.form-check-input[type="checkbox"] {
+    margin-top: 0;
+}
+
+/* Dropdown button styles */
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* Badge styles */
+.badge {
+    font-size: 12px;
+    padding: 8px;
+}
+
+/* Pagination styles */
+.pagination {
+    justify-content: flex-end;
+}
+
+.form-select {
+    /* Thiết lập chiều rộng và padding phù hợp */
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-select:focus {
+    /* Hiển thị hiệu ứng focus */
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(0, 123, 255, .25);
+}
+
+.form-select.is-invalid {
+    /* Hiển thị hiệu ứng lỗi nếu cần */
+    border-color: #dc3545;
+    background-color: #fff0f3;
+}
+
+.form-select option {
+    /* Thiết lập kiểu dáng cho các option trong dropdown */
+    color: #495057;
+    background-color: #fff;
+    font-weight: normal;
+}
+
+.form-select option[value="Pending"] {
+    /* Kiểu dáng cho option "Pending" */
+    background-color: #ffc107;
+    color: #212529;
+}

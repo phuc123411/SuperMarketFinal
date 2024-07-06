@@ -1,0 +1,62 @@
+<app-admin-header></app-admin-header>
+<div class="content-wrapper">
+  <section class="content">
+    <div class="container-fluid">
+      <div class="form-container">
+        <form #productForm="ngForm" (ngSubmit)="onSubmit()">
+          <div class="container tm-mt-big tm-mb-big">
+            <div class="row">
+              <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+                <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="tm-block-title d-inline-block">Add Product</h2>
+                    </div>
+                  </div>
+                  <div class="row tm-edit-product-row">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+                      <div class="form-group mb-3">
+                        <label for="name">Name Product:</label>
+                        <input type="text" id="name" name="name" [(ngModel)]="product.name" required>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" [(ngModel)]="product.description" required></textarea>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="category">Category:</label>
+                        <select name="CategoryId" id="category" class="form-control" [(ngModel)]="product.categoryId" required>
+                          <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+                        </select>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="brand">Brand:</label>
+                        <select name="BrandId" id="brand" class="form-control" [(ngModel)]="product.brandId" required>
+                          <option *ngFor="let brand of brands" [value]="brand.id">{{ brand.name }}</option>
+                        </select>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label>Feature Product:</label>
+                      <div>
+                        <label>
+                          <input type="radio" name="fetureProduct" [(ngModel)]="product.fetureProduct" [value]="1"> Yes
+                        </label>
+                        <label>
+                          <input type="radio" name="fetureProduct" [(ngModel)]="product.fetureProduct" [value]="0"> No
+                        </label>
+                      </div>
+                      </div>
+                      <button type="submit" [disabled]="!productForm.form.valid">Add Product</button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+<app-admin-footer></app-admin-footer>
+<router-outlet></router-outlet>

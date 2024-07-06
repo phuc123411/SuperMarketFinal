@@ -1,0 +1,18 @@
+<app-admin-header></app-admin-header>
+<div class="content-wrapper">
+  <section class="content">
+    <div class="container-fluid">
+      <div>
+        <form #brandForm="ngForm" (ngSubmit)="onSubmit()">
+          <div>
+            <label for="name">Name Attribute:</label>
+            <input type="text" id="name" name="name" [(ngModel)]="attribute.name" required>
+          </div>
+          <button type="submit">Add Attribute</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+<app-admin-footer></app-admin-footer>
+<router-outlet></router-outlet>

@@ -1,0 +1,22 @@
+<app-admin-header></app-admin-header>
+<div class="content-wrapper">
+  <section class="content">
+    <div class="container-fluid">
+      <div>
+        <form #categoryForm="ngForm" (ngSubmit)="updateCategory()">
+          <div>
+            <label for="name">Name Category:</label>
+            <input type="text" id="name" name="name" [(ngModel)]="category.name" required>
+          </div>
+          <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" [(ngModel)]="category.description" required></textarea>
+          </div>
+          <button type="submit">Edit Category</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+<app-admin-footer></app-admin-footer>
+<router-outlet></router-outlet>

@@ -1,0 +1,42 @@
+<app-admin-header></app-admin-header>
+<div class="content-wrapper">
+  <section class="content">
+    <div class="container-fluid">
+      <div>
+        <h1 class="text-center">Attribute Value Management</h1>
+        <a [routerLink]="'/admin/product/attribute_value/create/' + productId" class="btn btn-primary">Create Attribute Value</a>
+      </div>
+      <div>
+        <table class="table table-primary">
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Name Attribute</th>
+              <th>Name Attribute Value</th>
+              <th>Quantity</th>
+              <th>Price In</th>
+              <th>Price Out</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let attribute_value of attributeValues; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ attribute_value.attributeName }}</td>
+              <td>{{ attribute_value.name }}</td>
+              <td>{{ attribute_value.quantity}}</td>
+              <td>{{ attribute_value.priceIn}}</td>
+              <td>{{ attribute_value.priceOut}}</td>
+              <td>
+                <a [routerLink]="'/admin/product/attribute_value/update/' + attribute_value.productId + '/' + attribute_value.id" class="btn btn-success">Edit</a>
+                <a (click)="deleteAttributeValue(attribute_value.id)" class="btn btn-danger">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>
+<app-admin-footer></app-admin-footer>
+<router-outlet></router-outlet>

@@ -1,0 +1,58 @@
+<!-- <app-customer-header></app-customer-header> -->
+<!-- <div>
+  <p>Login</p>
+  <form (submit)="onLogin()">
+    <label for="username">Username</label>
+    <input type="text" name="username" [(ngModel)]="username" required>
+    <label for="password">Password</label>
+    <input type="password" name="password" [(ngModel)]="password" required>
+    <button type="submit">Login</button>
+  </form>
+</div> -->
+
+<div class="d-md-flex half">
+  <div class="bg" style="background-image: url('../../../../assets/img/login/imagelogin2.jpg');"></div>
+  <div class="contents">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-12">
+          <div class="form-block mx-auto">
+            <div class="text-center mb-5">
+              <h3 class="text-uppercase">Login to <img src="assets/img/logo2.jpg" alt></h3>
+            </div>
+            <form (submit)="onLogin()">
+              <div class="form-group first">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" placeholder="your-email@gmail.com" name="username" [(ngModel)]="username" required>
+              </div>
+              <div class="form-group last mb-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" placeholder="Your Password" name="password" [(ngModel)]="password" required>
+              </div>
+              <div class="d-sm-flex mb-5 align-items-center">
+                <label class="control control--checkbox mb-3 mb-sm-0"><span class="caption">Remember me</span>
+                  <input type="checkbox" checked="checked" />
+                  <div class="control__indicator"></div>
+                </label>
+                <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+              </div>
+              <input type="submit" value="Log In" class="btn btn-block py-2 btn-primary">
+              <span class="text-center my-3 d-block">or</span>
+              <div>
+                <a href="#" class="btn btn-block py-2 btn-facebook">
+                  <span class="fa fa-facebook mr-3"></span> Login with Facebook
+                </a>
+                <a href="#" class="btn btn-block py-2 btn-google">
+                  <span class="fa fa-google mr-3"></span> Login with Google
+                </a>
+                <span class="ml-auto">Don't have account?<a routerLink="/register" class="register">Sign Up</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-customer-footer></app-customer-footer>
+<router-outlet></router-outlet> 

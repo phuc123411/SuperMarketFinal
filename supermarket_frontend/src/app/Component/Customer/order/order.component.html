@@ -1,0 +1,94 @@
+<app-customer-header></app-customer-header>
+<section class="checkout spad">
+  <div class="container">
+    <div class="checkout__form">
+      <h4>Billing Details</h4>
+      <form (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-lg-8 col-md-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="checkout__input">
+                  <p>First Name<span>*</span></p>
+                  <input type="text" name="firstName" [(ngModel)]="firstName" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="checkout__input">
+                  <p>Last Name<span>*</span></p>
+                  <input type="text" name="lastName" [(ngModel)]="lastName" required>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__input">
+              <p>Province<span>*</span></p>
+              <select class="form-control" [(ngModel)]="selectedProvince" (change)="onProvinceChange()" name="province" required>
+                <option *ngFor="let province of provinces" [value]="province.ProvinceID">{{ province.ProvinceName }}</option>
+              </select>
+            </div>
+            <div class="checkout__input">
+              <p>District<span>*</span></p>
+              <select class="form-control" [(ngModel)]="selectedDistrict" (change)="onDistrictChange()" name="district" required>
+                <option *ngFor="let district of districts" [value]="district.DistrictID">{{ district.DistrictName }}</option>
+              </select>
+            </div>
+            <div class="checkout__input">
+              <p>Ward<span>*</span></p>
+              <select class="form-control" [(ngModel)]="selectedWard" name="ward" required>
+                <option *ngFor="let ward of wards" [value]="ward.WardCode">{{ ward.WardName }}</option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="checkout__input">
+                  <p>Phone<span>*</span></p>
+                  <input type="text" name="phone" [(ngModel)]="phone" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="checkout__order">
+              <h4>Your Order</h4>
+              <div class="checkout__order__products">Products <span>Total</span></div>
+              <ul *ngFor="let item of cartItems">
+                <li>{{item.productName}} <span>{{(item.quantity * item.price) | currency:'VND':'symbol':'1.0-0'}}</span></li>
+              </ul>
+              <div class="checkout__order__subtotal" *ngIf="shippingFee > 0">Shipping Fee <span>{{ shippingFee | currency:'VND':'symbol':'1.0-0' }}</span></div>
+              <div class="checkout__order__total">Total <span>{{ calculateTotal() | currency:'VND':'symbol':'1.0-0' }}</span></div>
+              <div class="checkout__input__checkbox">
+                <label for="cashPayment">
+                  Cash Payment
+                  <input type="radio" id="cashPayment" name="paymentMethod" [(ngModel)]="paymentMethod" [value]="1" (change)="onPaymentMethodChange()">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="checkout__input__checkbox">
+                <label for="vnpayPayment">
+                  VNPay Payment
+                  <input type="radio" id="vnpayPayment" name="paymentMethod" [(ngModel)]="paymentMethod" [value]="2" (change)="onPaymentMethodChange()">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div *ngIf="availableServices.length > 0">
+                <h4>Available Services</h4>
+                <div *ngFor="let service of availableServices">
+                  <input
+                    type="radio"
+                    [value]="service.service_id"
+                    [(ngModel)]="selectedService"
+                    name="availableService"
+                    (change)="onServiceChange(service.service_id)"
+                  />
+                  {{ service.short_name }}
+                </div>
+              </div>
+              <button type="submit" class="site-btn">PLACE ORDER</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<app-customer-footer></app-customer-footer>

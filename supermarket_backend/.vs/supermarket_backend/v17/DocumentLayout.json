@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lna02\\OneDrive\\Desktop\\Project_Sem3\\supermarket_backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7E7B39F-D421-4235-A409-71776663168C}|supermarket_backend\\supermarket_backend.csproj|c:\\users\\lna02\\onedrive\\desktop\\project_sem3\\supermarket_backend\\supermarket_backend\\controllers\\attributevaluescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7E7B39F-D421-4235-A409-71776663168C}|supermarket_backend\\supermarket_backend.csproj|solutionrelative:supermarket_backend\\controllers\\attributevaluescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7E7B39F-D421-4235-A409-71776663168C}|supermarket_backend\\supermarket_backend.csproj|c:\\users\\lna02\\onedrive\\desktop\\project_sem3\\supermarket_backend\\supermarket_backend\\controllers\\order_detailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7E7B39F-D421-4235-A409-71776663168C}|supermarket_backend\\supermarket_backend.csproj|solutionrelative:supermarket_backend\\controllers\\order_detailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7E7B39F-D421-4235-A409-71776663168C}|supermarket_backend\\supermarket_backend.csproj|c:\\users\\lna02\\onedrive\\desktop\\project_sem3\\supermarket_backend\\supermarket_backend\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7E7B39F-D421-4235-A409-71776663168C}|supermarket_backend\\supermarket_backend.csproj|solutionrelative:supermarket_backend\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\lna02\\OneDrive\\Desktop\\Project_Sem3\\supermarket_backend\\supermarket_backend\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "supermarket_backend\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\lna02\\OneDrive\\Desktop\\Project_Sem3\\supermarket_backend\\supermarket_backend\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "supermarket_backend\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T16:43:07.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AttributeValuesController.cs",
+              "DocumentMoniker": "C:\\Users\\lna02\\OneDrive\\Desktop\\Project_Sem3\\supermarket_backend\\supermarket_backend\\Controllers\\AttributeValuesController.cs",
+              "RelativeDocumentMoniker": "supermarket_backend\\Controllers\\AttributeValuesController.cs",
+              "ToolTip": "C:\\Users\\lna02\\OneDrive\\Desktop\\Project_Sem3\\supermarket_backend\\supermarket_backend\\Controllers\\AttributeValuesController.cs",
+              "RelativeToolTip": "supermarket_backend\\Controllers\\AttributeValuesController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAcwHwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T16:38:23.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order_DetailController.cs",
+              "DocumentMoniker": "C:\\Users\\lna02\\OneDrive\\Desktop\\Project_Sem3\\supermarket_backend\\supermarket_backend\\Controllers\\Order_DetailController.cs",
+              "RelativeDocumentMoniker": "supermarket_backend\\Controllers\\Order_DetailController.cs",
+              "ToolTip": "C:\\Users\\lna02\\OneDrive\\Desktop\\Project_Sem3\\supermarket_backend\\supermarket_backend\\Controllers\\Order_DetailController.cs",
+              "RelativeToolTip": "supermarket_backend\\Controllers\\Order_DetailController.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAwwFcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T12:27:46.973Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

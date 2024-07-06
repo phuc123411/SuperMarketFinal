@@ -1,0 +1,59 @@
+<app-admin-header></app-admin-header>
+<div class="content-wrapper">
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center mb-4">Product Management</h1>
+          <a routerLink="/admin/product/create" class="btn btn-primary mb-3">Create Product</a>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th>STT</th>
+                  <th>Brand Name</th>
+                  <th>Category Name</th>
+                  <th>Name Product</th>
+                  <th>Description</th>
+                  <th>Feature Product</th>
+                  <th>Main Image</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let product of products; let i = index">
+                  <td>{{ i + 1 }}</td>
+                  <td>{{ product.brandName }}</td>
+                  <td>{{ product.categoryName }}</td>
+                  <td>{{ product.name }}</td>
+                  <td>{{ product.description }}</td>
+                  <td>{{ product.featureProduct === 1 ? 'Feature' : 'Non Feature' }}</td>
+                  <td>
+                    <img *ngIf="product.imageMain" [src]="product.imageMain" alt="Main Image" width="100">
+                  </td>
+                  <td>
+                    <a [routerLink]="'/admin/product/image/create/' + product.id" class="btn btn-sm btn-dark mx-2" data-toggle="tooltip" title="Add Image">
+                      <i class="fas fa-image"></i>
+                    </a>
+                    <a [routerLink]="'/admin/product/attribute_value/' + product.id" class="btn btn-sm btn-light mx-2" data-toggle="tooltip" title="Add Attribute Value">
+                      <i class="fas fa-plus"></i>
+                    </a>
+                    <a [routerLink]="'/admin/product/update/' + product.id" class="btn btn-sm btn-success mx-2" data-toggle="tooltip" title="Edit">
+                      <i class="fas fa-edit"></i>
+                    </a>
+                    <a (click)="deleteProduct(product.id)" class="btn btn-sm btn-danger mx-2" data-toggle="tooltip" title="Delete">
+                      <i class="fas fa-trash"></i>
+                    </a>  
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<app-admin-footer></app-admin-footer>
+<router-outlet></router-outlet>

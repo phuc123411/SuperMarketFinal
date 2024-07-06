@@ -1,0 +1,52 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\3e93c5ab-21df-45fd-aec7-5eedea7ff331_10281835.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>supermarket_backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/supermarket_backend</BasePath>
+      <RelativePath>images/3e93c5ab-21df-45fd-aec7-5eedea7ff331_10281835.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\3e93c5ab-21df-45fd-aec7-5eedea7ff331_10281835.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\497fff4d-2ca5-47df-a60b-ee093d3077d6_10281835.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>supermarket_backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/supermarket_backend</BasePath>
+      <RelativePath>images/497fff4d-2ca5-47df-a60b-ee093d3077d6_10281835.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\497fff4d-2ca5-47df-a60b-ee093d3077d6_10281835.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\f8af402b-2fdf-4fc0-9d3a-c758adc2a3d5_gia-do-wineco-300g_30d1ca80-a65f-45af-b099-154e806a4be4-og.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>supermarket_backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/supermarket_backend</BasePath>
+      <RelativePath>images/f8af402b-2fdf-4fc0-9d3a-c758adc2a3d5_gia-do-wineco-300g_30d1ca80-a65f-45af-b099-154e806a4be4-og.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\f8af402b-2fdf-4fc0-9d3a-c758adc2a3d5_gia-do-wineco-300g_30d1ca80-a65f-45af-b099-154e806a4be4-og.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

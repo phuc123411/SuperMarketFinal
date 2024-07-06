@@ -1,0 +1,36 @@
+<app-admin-header></app-admin-header>
+<div class="content-wrapper">
+  <section class="content">
+    <div class="container-fluid">
+      <div>
+        <h1 class="text-center">Category Management</h1>
+        <a routerLink="/admin/category/create" class="btn btn-primary">Create Category</a>
+      </div>
+      <div>
+        <table class="table table-primary">
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Name Category</th>
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let category of categories; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ category.name }}</td>
+              <td>{{ category.description }}</td>
+              <td>
+                <a [routerLink]="'/admin/category/update/' + category.id" class="btn btn-success">Edit</a>
+                <a (click)="deleteCategory(category.id)" class="btn btn-danger">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>
+<app-admin-footer></app-admin-footer>
+<router-outlet></router-outlet>
